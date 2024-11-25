@@ -1,1 +1,8 @@
+//Aquí como en globals definimos que cogiéramos todas las variables de variables y mixins, lo usamos
+//Añadiendo el as * lo que haces es eliminar el prefijo .globals para acceder a las variables
+
 @use "globals" as *;
+
+header{
+    background-color: greenyellow;
+}
