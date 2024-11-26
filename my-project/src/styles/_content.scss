@@ -5,7 +5,7 @@ main{
     padding-bottom: 10%;
     padding-top: 10%;
     @include respond-to("medium"){
-        padding-top: 5%;
+        padding-top: 0;
         margin-top: 0;
         padding-bottom: 5%;
     }
