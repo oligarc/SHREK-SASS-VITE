@@ -1,0 +1,31 @@
+@use "globals" as *;
+
+main{
+    background-color: $background-color-main;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    .con-1{
+        hr{
+            width: 80%;
+            color: $font-color-hr-and-shrek;
+            border: none;
+            border-top: 12px solid $font-color-hr-and-shrek;
+            margin-bottom: 10%;
+        }
+        h1{
+            font-family: 'Shrek';
+            color: $background-color-footer;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 15%;
+            span{
+                color: $font-color-hr-and-shrek;
+            }
+        }
+
+        p{
+            margin-bottom: 10%;
+            text-align: center;
+        }
+    }
+}

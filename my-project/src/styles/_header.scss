@@ -4,5 +4,66 @@
 @use "globals" as *;
 
 header{
-    background-color: greenyellow;
+    background-image: url(../img/shrek-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -120px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+    @include respond-to("medium"){
+        background-position-x: left;
+        padding-top: 10%;
+        padding-bottom: 30%;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        ul{
+            list-style-type: none;
+            @include respond-to("medium"){
+                display: block;
+            }
+            li{
+                display: inline-block;
+                padding-right: 15px;
+                @include respond-to("medium"){
+                    display: block;
+                    text-align: center;
+                    padding-right: 0; 
+                    margin-bottom: 10px; 
+                }
+                a{
+                    text-decoration: none;
+                    font-family: 'Shrek';
+                    color: $font-color-header-and-footer;
+                    @include respond-to("medium"){
+                        font-size: 14px;
+                        padding: 5px 0; 
+                    }
+                    button{
+                        font-family: 'Shrek';
+                        color: $font-color-header-and-footer;
+                        background-color: $background-color-footer;
+                        border-radius: 30%;
+                        padding: 18%;
+                        position: relative;
+                        @include respond-to("medium"){
+                            font-size: 12px;
+                            padding: 10px;
+                        }
+                        img{
+                            position: absolute;
+                            @include respond-to("medium"){
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

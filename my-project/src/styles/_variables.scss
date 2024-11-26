@@ -1,5 +1,10 @@
 //Variables para sass
 
+@font-face {
+    font-family: 'Shrek';
+    src: url(../fonts/SHREK___.TTF);
+}
+
 $font-color-header-and-footer:#dfd41d;
 $font-color-hr-and-shrek:#163819;
 $background-color-footer:#5a4235;
@@ -7,3 +12,7 @@ $font-color-p-footer:#d0c8a4;
 $background-color-main:#ebeaea;
 $container-max-width:1200px;
 $container-padding:15px;
+
+$breakpoints:(
+    "medium":"max-width: 800px"
+);

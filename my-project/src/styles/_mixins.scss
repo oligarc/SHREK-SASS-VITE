@@ -1,30 +1,21 @@
-$breakpoints: (
-  "medium": (
-    max-width: 800px,
-  ),
-  "large": (
-    min-width: 1000px,
-  ),
-  "huge": (
-    min-width: 1200px,
-  ),
-);
+@use "sass:map";
+@use "variables" as *;
+
+@mixin container{
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
 
 /// Responsive breakpoint manager
 /// @access public
 /// @param {String} $breakpoint - Breakpoint
 /// @requires $breakpoints
 @mixin respond-to($breakpoint) {
-  $raw-query: map-get($breakpoints, $breakpoint);
+  $query: map.get($breakpoints, $breakpoint);
 
-  @if $raw-query {
-    $query: if(
-      type-of($raw-query) == "string",
-      unquote($raw-query),
-      inspect($raw-query)
-    );
-
-    @media #{$query} {
+  @if $query {
+    @media (#{$query}) {
       @content;
     }
   } @else {
