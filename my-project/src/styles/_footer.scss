@@ -2,7 +2,7 @@
 
 footer{
     background-color: $background-color-footer;
-    padding: 2%;
+    padding: $padding-2-per-cent;
     @include respond-to("medium"){
         padding: 10% 0;
         .row{
@@ -14,12 +14,12 @@ footer{
             font-family: 'Shrek';
             color: $font-color-p-footer;
             @include respond-to("medium"){
-                font-size: 18px;
+                font-size: $sizes-20-px;
             }
             span{
                 color: $font-color-header-and-footer;
                 @include respond-to("medium"){
-                    font-size: 16px;
+                    font-size: $sizes-h4;
                 }
             }
         }
@@ -28,11 +28,11 @@ footer{
     .con-2{
         .icons-group{
             img{
-                width: 20%;
-                margin-right: 2%;
+                width: $size-width-20-per-cent;
+                margin-right: $padding-2-per-cent;
                 @include respond-to("medium"){
-                    width: 25%; 
-                    margin-right: 5%; 
+                    width: $size-width-25-per-cent; 
+                    margin-right: $padding-5-per-cent; 
                 }
             }
         }
@@ -50,7 +50,7 @@ footer{
                 color: $font-color-p-footer;
                 text-decoration: none;
                 @include respond-to("medium"){
-                    font-size: 14px;
+                    font-size: $sizes-small;
                     margin-bottom: 5px;
                 }
             }

@@ -8,13 +8,13 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: -120px;
-    padding-top: 5%;
+    background-position-y: $bg-position-img-header;
+    padding-top: $padding-5-per-cent;
     padding-bottom: 2%;
 
     @include respond-to("medium"){
         background-position-x: left;
-        padding-top: 10%;
+        padding-top: $padding-10-per-cent;
         padding-bottom: 0;
         background-color: $background-color-main;
     }
@@ -28,7 +28,7 @@ header{
         @include respond-to("medium"){
             display: block;
             padding-top: 0; 
-            padding-bottom: 30%;
+            padding-bottom: $padding-30-per-cent;
         }
         ul{
             list-style-type: none;
@@ -37,36 +37,36 @@ header{
             }
             li{
                 display: inline-block;
-                padding-right: 15px;
+                padding-right: $padding-15-px;
                 @include respond-to("medium"){
                     display: block;
                     text-align: center;
                     padding-right: 0; 
-                    margin-bottom: 10px; 
+                    margin-bottom: $padding-10-px; 
                 }
                 a{
                     text-decoration: none;
                     font-family: 'Shrek';
                     color: $font-color-header-and-footer;
                     @include respond-to("medium"){
-                        font-size: 14px;
+                        font-size: $sizes-small;
                         padding: 5px 0; 
                     }
                     button{
                         font-family: 'Shrek';
                         color: $font-color-header-and-footer;
                         background-color: $background-color-footer;
-                        border-radius: 30%;
-                        padding: 18%;
+                        border-radius: $border-radius-30-per-cent;
+                        padding: $padding-button;
                         position: relative;
                         @include respond-to("medium"){
-                            font-size: 12px;
-                            padding: 20px;
+                            font-size: $sizes-extra-small;
+                            padding: $sizes-20-px;
                         }
                         img{
                             position: absolute;
                             @include respond-to("medium"){
-                                width: 20px;
+                                width: $sizes-20-px;
                             }
                         }
                         .join-class{
