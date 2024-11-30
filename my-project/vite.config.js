@@ -2,15 +2,15 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  root: "./src", // Cambia la raíz del proyecto a "src"
+  root: "./src", // La raíz del proyecto se establece en "src"
   build: {
-    outDir: "../docs", // Los archivos construidos irán a la carpeta "docs" (GitHub Pages usa esta carpeta automáticamente)
+    outDir: "../docs", // La salida de la construcción va a la carpeta "docs"
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"), // Página principal
-        index2: resolve(__dirname, "src/index2.html"), // Otra página (index2.html)
+        index2: resolve(__dirname, "src/index2.html"), // Otra página
       },
     },
   },
-  base: "./", // Usa rutas relativas para mayor compatibilidad en GitHub Pages
+  base: "./", // Usamos rutas relativas para mayor compatibilidad en GitHub Pages
 });
