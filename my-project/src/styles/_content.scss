@@ -33,6 +33,7 @@ main{
             text-align: center;
             margin-top: $padding-10-px;
             margin-bottom: $padding-15-per-cent;
+            animation: shrekBounce 1.5s ease-out;
             @include respond-to("medium"){
                 font-size: $sizes-20-px;
                 margin-bottom: $padding-10-px;
